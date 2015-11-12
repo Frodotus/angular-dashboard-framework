@@ -1,12 +1,12 @@
 <div class="modal-header">
   <button type="button" class="close" ng-click="closeDialog()" aria-hidden="true">&times;</button>
-  <h4 class="modal-title">{{widget.title}}</h4>
+  <h4 class="modal-title">{{ widget.title | translate }}</h4>
 </div>
 <div class="modal-body">
   <form role="form">
     <div class="form-group">
-      <label for="widgetTitle">Title</label>
-      <input type="text" class="form-control" id="widgetTitle" ng-model="definition.title" placeholder="Enter title" required="">
+      <label for="widgetTitle">{{ 'Title' | translate }}</label>
+      <input type="text" class="form-control" id="widgetTitle" ng-model="definition.title" placeholder="{{ 'Enter title' | translate }}" required="">
     </div>
   </form>
   <div ng-if="widget.edit">
@@ -14,6 +14,6 @@
   </div>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-default" ng-click="closeDialog()">Cancel</button>
-  <button type="button" class="btn btn-primary" ng-click="saveDialog()">Apply</button>
+  <button type="button" class="btn btn-default" ng-click="closeDialog()">{{ 'Cancel' | translate }}</button>
+  <button type="button" class="btn btn-primary" ng-click="saveDialog()">{{ 'Apply' | translate }}</button>
 </div>

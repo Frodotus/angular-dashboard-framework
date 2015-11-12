@@ -5,7 +5,7 @@
       <i class="glyphicon glyphicon-refresh"></i>
     </a>
     <!-- change widget location -->
-    <a href="" title="change widget location" class="adf-move" ng-if="editMode">
+    <a href="" title="{{ 'change widget location' | translate }}" class="adf-move" ng-if="editMode">
       <i class="glyphicon glyphicon-move"></i>
     </a>
     <!-- collapse -->
@@ -17,14 +17,14 @@
       <i class="glyphicon glyphicon-plus"></i>
     </a>
     <!-- open edit mode -->
-    <a href="" title="edit widget configuration" ng-click="edit()" ng-if="editMode">
+    <a href="" title="{{ 'edit widget configuration' | translate }}" ng-click="edit()" ng-if="editMode">
       <i class="glyphicon glyphicon-cog"></i>
     </a>
-    <a href="" title="fullscreen widget" ng-click="openFullScreen()" ng-show="options.maximizable">
+    <a href="" title="{{ 'fullscreen widget' | translate }}" ng-click="openFullScreen()" ng-show="options.maximizable">
      <i class="glyphicon glyphicon-fullscreen"></i>
     </a>
     <!-- remove widget -->
-    <a href="" title="remove widget" ng-click="remove()" ng-if="editMode">
+    <a href="" title="{{'remove widget' | translate }}" ng-click="remove()" ng-if="editMode">
       <i class="glyphicon glyphicon-remove"></i>
     </a>
   </span>

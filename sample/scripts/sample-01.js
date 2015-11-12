@@ -23,7 +23,10 @@
  */
 'use strict';
 
-angular.module('sample-01', ['adf', 'LocalStorageModule'])
+angular.module('sample-01', ['adf', 'LocalStorageModule', 'pascalprecht.translate'])
+  .config(function($translateProvider) {
+    $translateProvider.preferredLanguage('en');
+  })
 .controller('sample01Ctrl', function($scope, localStorageService){
 
   var name = 'sample-01';
